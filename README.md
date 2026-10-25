@@ -51,21 +51,9 @@ var/                本地运行产物，Git 忽略
 
 ## 架构与数据流
 
-```mermaid
-flowchart LR
-    User[输入 BV / 视频链接] --> UI[React 看板]
-    UI --> API[本地 HTTP API]
-    API --> Job[单 worker / 任务状态]
-    Job --> C[Collection: 分页 + 检查点]
-    C --> Raw[(私有原件 + 来源清单)]
-    Raw --> T[Cleaner / Transformer]
-    T --> S[Standard + 上下文]
-    S --> L[Codex CLI 语义批次]
-    L --> I[BFSI 精确计算]
-    I --> P[不可覆盖的结果 payload]
-    P --> UI
-    P --> PNG[结构化 PNG]
-```
+![架构与数据流](docs/images/architecture.svg)
+
+[查看可编辑图源](docs/architecture.mmd)
 
 服务只监听 `127.0.0.1`。静态目录只包含构建后的前端；运行数据、原始评论和模型日志不作为静态文件提供。更详细的边界和接口见 [架构说明](docs/ARCHITECTURE.md)。
 

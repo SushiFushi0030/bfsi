@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+<title id="title">BFSI 架构与数据流</title>
+<desc id="desc">输入视频链接后，由看板通过本地 API 创建任务，分页采集评论并私有保存原件，经过标准化和上下文保留、Codex CLI 语义分析、BFSI 计算，生成固定结果。结果返回看板，也可导出结构化 PNG。</desc>
+<defs>
+ <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto-start-reverse"><path d="M 2 2 L 10 6 L 2 10" fill="none" stroke="#71869b" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+ <marker id="return-arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="10" markerHeight="10" orient="auto"><path d="M 2 2 L 10 6 L 2 10" fill="none" stroke="#3d8c78" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+ <style>
+ text {font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif;}
+ .heading {font-size:32px;font-weight:700;fill:#142c40;}
+ .subtitle {font-size:17px;fill:#5b6e80;}
+ .section {font-size:15px;font-weight:600;fill:#627a8d;letter-spacing:1px;}
+ .card-title {font-size:20px;font-weight:650;fill:#18374b;}
+ .card-sub {font-size:14px;fill:#5b7182;}
+ .card-step {font-size:13px;font-weight:600;fill:#7a91a4;}
+ .flow {fill:none;stroke:#71869b;stroke-width:2.5;marker-end:url(#arrow);stroke-linejoin:round;stroke-linecap:round;}
+ .return {fill:none;stroke:#3d8c78;stroke-width:2.5;stroke-dasharray:7 6;marker-end:url(#return-arrow);stroke-linejoin:round;stroke-linecap:round;}
+ .label {font-size:14px;fill:#5b7182;}
+ </style>
+</defs>
+<rect width="1200" height="900" rx="18" fill="#f7f9fc"/>
+<text x="60" y="54" class="heading">BFSI 架构与数据流</text>
+<text x="60" y="86" class="subtitle">从 BV 输入到可追溯的评论分析、看板与分享图片</text>
+<line x1="60" y1="105" x2="1138" y2="105" stroke="#dbe4ec"/>
+<text x="60" y="169" class="section">输入与任务</text>
+<text x="60" y="389" class="section">采集与标准化</text>
+<text x="60" y="629" class="section">语义与输出</text>
+<!-- Main data flow: left-to-right, right-to-left, then left-to-right. -->
+<path class="flow" d="M 298 245 H 337"/>
+<path class="flow" d="M 578 245 H 617"/>
+<path class="flow" d="M 858 245 H 897"/>
+<path class="flow" d="M 1019 300 V 407"/>
+<path class="flow" d="M 900 465 H 861"/>
+<path class="flow" d="M 620 465 H 581"/>
+<path class="flow" d="M 340 465 H 301"/>
+<path class="flow" d="M 179 520 V 647"/>
+<path class="flow" d="M 298 705 H 337"/>
+<path class="flow" d="M 578 705 H 617"/>
+<path class="flow" d="M 858 705 H 897"/>
+<!-- Separate result return branch; raw and model data remain local. -->
+<path class="return" d="M 739 760 V 813 Q 739 825 727 825 H 32 Q 20 825 20 813 V 147 Q 20 135 32 135 H 447 Q 459 135 459 147 V 187"/>
+<rect x="207" y="120" width="220" height="29" rx="7" fill="#f7f9fc"/>
+<text x="224" y="140" font-size="15" font-weight="600" fill="#3d8c78">结果读取与看板更新</text>
+<text x="1037" y="359" class="label">采集任务</text>
+<text x="196" y="590" class="label">冻结输入</text>
+
+<g class="card" data-step="01"><rect x="60" y="190" width="238" height="110" rx="13" fill="#ffffff" stroke="#d5e0e9" stroke-width="1.4"/><text x="78" y="215" class="card-step">01</text><text x="179" y="247" text-anchor="middle" class="card-title">输入 BV / 视频链接</text><text x="179" y="276" text-anchor="middle" class="card-sub">用户创建独立分析任务</text></g>
+<g class="card" data-step="02"><rect x="340" y="190" width="238" height="110" rx="13" fill="#ffffff" stroke="#d5e0e9" stroke-width="1.4"/><text x="358" y="215" class="card-step">02</text><text x="459" y="247" text-anchor="middle" class="card-title">React 看板</text><text x="459" y="276" text-anchor="middle" class="card-sub">任务进度 · 指标 · 代表评论</text></g>
+<g class="card" data-step="03"><rect x="620" y="190" width="238" height="110" rx="13" fill="#ffffff" stroke="#d5e0e9" stroke-width="1.4"/><text x="638" y="215" class="card-step">03</text><text x="739" y="247" text-anchor="middle" class="card-title">本地 HTTP API</text><text x="739" y="276" text-anchor="middle" class="card-sub">127.0.0.1 · 本机访问校验</text></g>
+<g class="card" data-step="04"><rect x="900" y="190" width="238" height="110" rx="13" fill="#ffffff" stroke="#d5e0e9" stroke-width="1.4"/><text x="918" y="215" class="card-step">04</text><text x="1019" y="247" text-anchor="middle" class="card-title">任务状态与调度</text><text x="1019" y="276" text-anchor="middle" class="card-sub">单 worker · 暂停 / 续跑</text></g>
+<g class="card" data-step="05"><rect x="900" y="410" width="238" height="110" rx="13" fill="#ffffff" stroke="#d5e0e9" stroke-width="1.4"/><text x="918" y="435" class="card-step">05</text><text x="1019" y="467" text-anchor="middle" class="card-title">评论采集</text><text x="1019" y="496" text-anchor="middle" class="card-sub">主楼 · 置顶 · 回复分页</text></g>
+<g class="card" data-step="06"><rect x="620" y="410" width="238" height="110" rx="13" fill="#fff5df" stroke="#d9b666" stroke-width="1.4"/><text x="638" y="435" class="card-step">06</text><text x="739" y="467" text-anchor="middle" class="card-title">私有原件与来源清单</text><text x="739" y="496" text-anchor="middle" class="card-sub">响应原件 · SHA256 · 检查点</text></g>
+<g class="card" data-step="07"><rect x="340" y="410" width="238" height="110" rx="13" fill="#ffffff" stroke="#d5e0e9" stroke-width="1.4"/><text x="358" y="435" class="card-step">07</text><text x="459" y="467" text-anchor="middle" class="card-title">Cleaner / Transformer</text><text x="459" y="496" text-anchor="middle" class="card-sub">Schema · 关系 · 原件校验</text></g>
+<g class="card" data-step="08"><rect x="60" y="410" width="238" height="110" rx="13" fill="#ffffff" stroke="#d5e0e9" stroke-width="1.4"/><text x="78" y="435" class="card-step">08</text><text x="179" y="467" text-anchor="middle" class="card-title">Standard + 上下文</text><text x="179" y="496" text-anchor="middle" class="card-sub">不同评论 · Observation · 父链</text></g>
+<g class="card" data-step="09"><rect x="60" y="650" width="238" height="110" rx="13" fill="#ffffff" stroke="#d5e0e9" stroke-width="1.4"/><text x="78" y="675" class="card-step">09</text><text x="179" y="707" text-anchor="middle" class="card-title">Codex CLI 语义批次</text><text x="179" y="736" text-anchor="middle" class="card-sub">冻结输入 · 输出校验 · 成功复用</text></g>
+<g class="card" data-step="10"><rect x="340" y="650" width="238" height="110" rx="13" fill="#ffffff" stroke="#d5e0e9" stroke-width="1.4"/><text x="358" y="675" class="card-step">10</text><text x="459" y="707" text-anchor="middle" class="card-title">BFSI 精确计算</text><text x="459" y="736" text-anchor="middle" class="card-sub">方向 · 覆盖率 · 多空分歧</text></g>
+<g class="card" data-step="11"><rect x="620" y="650" width="238" height="110" rx="13" fill="#eaf6f1" stroke="#a9cfc1" stroke-width="1.4"/><text x="638" y="675" class="card-step">11</text><text x="739" y="707" text-anchor="middle" class="card-title">固定结果 payload</text><text x="739" y="736" text-anchor="middle" class="card-sub">不同 run 隔离 · 指纹绑定</text></g>
+<g class="card" data-step="12"><rect x="900" y="650" width="238" height="110" rx="13" fill="#eaf4fd" stroke="#adcbe3" stroke-width="1.4"/><text x="918" y="675" class="card-step">12</text><text x="1019" y="707" text-anchor="middle" class="card-title">结构化 PNG 海报</text><text x="1019" y="736" text-anchor="middle" class="card-sub">1080px 纵向图 · 本地下载</text></g>
+<text x="60" y="871" font-size="15" fill="#6b7d8b">原始评论与模型记录仅保存在本地运行目录；公开仓库仅提供合成示例。</text>
+</svg>

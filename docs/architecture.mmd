@@ -1,0 +1,13 @@
+flowchart LR
+    User[输入 BV / 视频链接] --> UI[React 看板]
+    UI --> API[本地 HTTP API]
+    API --> Job[单 worker / 任务状态]
+    Job --> C[Collection: 分页 + 检查点]
+    C --> Raw[(私有原件 + 来源清单)]
+    Raw --> T[Cleaner / Transformer]
+    T --> S[Standard + 上下文]
+    S --> L[Codex CLI 语义批次]
+    L --> I[BFSI 精确计算]
+    I --> P[不可覆盖的结果 payload]
+    P --> UI
+    P --> PNG[结构化 PNG]

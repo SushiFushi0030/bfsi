@@ -1,0 +1,45 @@
+# Runtime data is private. Never collect or infer into the source tree.
+/var/
+/runs/
+/raw/
+/evidence/
+/private_backups/
+/private-reports/
+/latest.json
+.env
+.env.*
+!.env.example
+*cookie*.txt
+*.pem
+*.key
+*.log
+*.jsonl
+*.har
+*.sqlite*
+*.db
+# Generated files and local environments
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+web/node_modules/
+web/dist/
+web/test-results/
+web/playwright-report/
+.pnpm-store/
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.DS_Store
+.idea/
+.vscode/
+*.tar
+*.tar.gz
+*.zip
+# Only deliberately reviewed images under docs/images are published.
+*.png
+!docs/images/*.png

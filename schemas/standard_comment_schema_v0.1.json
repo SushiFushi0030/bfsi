@@ -1,0 +1,591 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:bfsi:standard-comment:0.1",
+  "title": "BFSI Standard Comment Dataset v0.1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "ingestion_mode": {
+      "enum": [
+        "historical_fixture",
+        "production",
+        "synthetic_example"
+      ]
+    },
+    "file_manifest": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\]+\\.json$"
+    },
+    "comments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/comment"
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "ingestion_mode",
+    "file_manifest",
+    "comments"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]*$"
+    },
+    "utc": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,6})?Z$"
+    },
+    "span": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "additionalProperties": false
+    },
+    "core": {
+      "type": "object",
+      "properties": {
+        "comment_id": {
+          "$ref": "#/$defs/id"
+        },
+        "video_bvid": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^BV[A-Za-z0-9]{10}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "video_oid": {
+          "$ref": "#/$defs/id"
+        },
+        "root_comment_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "parent_comment_id": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "depth": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "raw_text": {
+          "type": "string",
+          "readOnly": true,
+          "description": "Immutable exact content.message. No replacement by normalization, redaction, translation or annotation."
+        },
+        "publish_time_raw": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 253402300799
+        },
+        "published_at": {
+          "$ref": "#/$defs/utc"
+        }
+      },
+      "required": [
+        "comment_id",
+        "video_bvid",
+        "video_oid",
+        "root_comment_id",
+        "parent_comment_id",
+        "depth",
+        "raw_text",
+        "publish_time_raw",
+        "published_at"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "depth": {
+                "const": 0
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "root_comment_id": {
+                "type": "null"
+              },
+              "parent_comment_id": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "root_comment_id": {
+                "$ref": "#/$defs/id"
+              },
+              "parent_comment_id": {
+                "$ref": "#/$defs/id"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "emote": {
+      "type": "object",
+      "properties": {
+        "source_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "token": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "source_index",
+        "token",
+        "label"
+      ],
+      "additionalProperties": false
+    },
+    "mention_source": {
+      "type": "object",
+      "properties": {
+        "field": {
+          "enum": [
+            "at_name_to_mid_str",
+            "at_name_to_mid",
+            "members"
+          ]
+        },
+        "index": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "field",
+        "index"
+      ],
+      "additionalProperties": false
+    },
+    "mention": {
+      "type": "object",
+      "properties": {
+        "local_ref": {
+          "type": "string",
+          "pattern": "^mention_[1-9][0-9]*$"
+        },
+        "text_spans": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/span"
+          },
+          "uniqueItems": true
+        },
+        "source_refs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mention_source"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "local_ref",
+        "text_spans",
+        "source_refs"
+      ],
+      "additionalProperties": false
+    },
+    "link": {
+      "type": "object",
+      "properties": {
+        "source_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "anchor_text": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "source_index",
+        "anchor_text",
+        "title"
+      ],
+      "additionalProperties": false
+    },
+    "content_source_states": {
+      "type": "object",
+      "properties": {
+        "emote": {
+          "enum": [
+            "missing",
+            "null",
+            "object"
+          ]
+        },
+        "at_name_to_mid": {
+          "enum": [
+            "missing",
+            "null",
+            "object"
+          ]
+        },
+        "at_name_to_mid_str": {
+          "enum": [
+            "missing",
+            "null",
+            "object"
+          ]
+        },
+        "members": {
+          "enum": [
+            "missing",
+            "null",
+            "array"
+          ]
+        },
+        "jump_url": {
+          "enum": [
+            "missing",
+            "null",
+            "object"
+          ]
+        },
+        "pictures": {
+          "enum": [
+            "missing",
+            "null",
+            "array"
+          ]
+        }
+      },
+      "required": [
+        "emote",
+        "at_name_to_mid",
+        "at_name_to_mid_str",
+        "members",
+        "jump_url",
+        "pictures"
+      ],
+      "additionalProperties": false
+    },
+    "observation": {
+      "type": "object",
+      "properties": {
+        "source_endpoint": {
+          "enum": [
+            "/x/v2/reply/wbi/main",
+            "/x/v2/reply/reply"
+          ]
+        },
+        "source_role": {
+          "enum": [
+            "ordinary_root",
+            "preview_reply",
+            "full_reply",
+            "reply_api_root_copy",
+            "pinned_root",
+            "pinned_preview_reply"
+          ]
+        },
+        "source_run": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observed_at": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/utc"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "observed_at_precision": {
+          "enum": [
+            "request",
+            "unknown"
+          ]
+        },
+        "raw_file": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\]+\\.json$"
+        },
+        "raw_object_path": {
+          "type": "string",
+          "pattern": "^/data/(?:replies/[0-9]+(?:/replies/[0-9]+)?|root|top/upper(?:/replies/[0-9]+)?|top_replies/[0-9]+(?:/replies/[0-9]+)?)$"
+        },
+        "like_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "reply_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "is_pinned": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "emotes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/emote"
+          }
+        },
+        "mentions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mention"
+          }
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/link"
+          }
+        },
+        "has_picture": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "picture_count": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "content_source_states": {
+          "$ref": "#/$defs/content_source_states"
+        }
+      },
+      "required": [
+        "source_endpoint",
+        "source_role",
+        "source_run",
+        "observed_at",
+        "observed_at_precision",
+        "raw_file",
+        "raw_object_path",
+        "like_count",
+        "reply_count",
+        "is_pinned",
+        "emotes",
+        "mentions",
+        "links",
+        "has_picture",
+        "picture_count",
+        "content_source_states"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "observed_at_precision": {
+                "const": "unknown"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "observed_at": {
+                "type": "null"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "observed_at": {
+                "$ref": "#/$defs/utc"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "has_picture": {
+                "const": true
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "picture_count": {
+                "type": "integer",
+                "minimum": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "has_picture": {
+                "const": false
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "picture_count": {
+                "const": 0
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "has_picture": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "picture_count": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "comment": {
+      "type": "object",
+      "properties": {
+        "core": {
+          "$ref": "#/$defs/core"
+        },
+        "observations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/observation"
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "core",
+        "observations"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "ingestion_mode": {
+            "const": "production"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "comments": {
+            "type": "array",
+            "items": {
+              "properties": {
+                "core": {
+                  "properties": {
+                    "video_bvid": {
+                      "type": "string",
+                      "pattern": "^BV[A-Za-z0-9]{10}$"
+                    }
+                  }
+                },
+                "observations": {
+                  "type": "array",
+                  "items": {
+                    "properties": {
+                      "observed_at": {
+                        "$ref": "#/$defs/utc"
+                      },
+                      "observed_at_precision": {
+                        "const": "request"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

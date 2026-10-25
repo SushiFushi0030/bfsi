@@ -1,0 +1,6 @@
+node_modules/
+dist/
+test-results/
+.pnpm-store/
+.DS_Store
+.cache/

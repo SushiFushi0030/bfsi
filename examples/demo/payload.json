@@ -1,0 +1,755 @@
+{
+  "payload_version": "v0.1",
+  "video": {
+    "video_oid": "900001",
+    "video_bvid": "BV0000000000",
+    "title": "合成演示｜财经评论区的不同市场观点",
+    "comment_count": 30,
+    "observation_count": 35,
+    "title_status": "known"
+  },
+  "headline": {
+    "bfsi": 54.5,
+    "signal_coverage": 73.3,
+    "disagreement": 89,
+    "bfsi_unrounded": 54.54545454545455,
+    "signal_coverage_unrounded": 73.33333333333333,
+    "signal_coverage_ratio": 0.7333333333333333,
+    "disagreement_unrounded": 88.88888888888889,
+    "disagreement_ratio": 0.8888888888888888,
+    "directional_score": 0.09090909090909091,
+    "directional_comments": 22,
+    "bullish_bearish_comments": 18,
+    "no_directional_signal": false,
+    "no_bullish_bearish_signal": false,
+    "units": {
+      "bfsi": "index_0_100",
+      "signal_coverage": "percent_0_100",
+      "disagreement": "score_0_100"
+    }
+  },
+  "auxiliary_metrics": {
+    "financial_relevance_rate": {
+      "count": 26,
+      "denominator": 30,
+      "denominator_label": "all_unique_comments",
+      "ratio": 0.8666666666666667,
+      "percent": 86.66666666666667,
+      "display_percent": 86.7,
+      "unit": "percent_0_100"
+    },
+    "advice_seeking_rate": {
+      "count": 2,
+      "denominator": 30,
+      "denominator_label": "all_unique_comments",
+      "ratio": 0.06666666666666667,
+      "percent": 6.666666666666667,
+      "display_percent": 6.7,
+      "unit": "percent_0_100"
+    },
+    "active_trading_intent_rate": {
+      "count": 5,
+      "denominator": 30,
+      "denominator_label": "all_unique_comments",
+      "ratio": 0.16666666666666666,
+      "percent": 16.666666666666668,
+      "display_percent": 16.7,
+      "unit": "percent_0_100",
+      "note": "Exploratory expression metric: completed trades, conditional plans and attribution ambiguity may coexist; not future orders."
+    },
+    "anxiety_rate": {
+      "count": 8,
+      "denominator": 30,
+      "denominator_label": "all_unique_comments",
+      "ratio": 0.26666666666666666,
+      "percent": 26.666666666666668,
+      "display_percent": 26.7,
+      "unit": "percent_0_100"
+    },
+    "confusion_rate": {
+      "count": 0,
+      "denominator": 30,
+      "denominator_label": "all_unique_comments",
+      "ratio": 0.0,
+      "percent": 0.0,
+      "display_percent": 0.0,
+      "unit": "percent_0_100"
+    },
+    "humor_rate": {
+      "count": 0,
+      "denominator": 30,
+      "denominator_label": "all_unique_comments",
+      "ratio": 0.0,
+      "percent": 0.0,
+      "display_percent": 0.0,
+      "unit": "percent_0_100"
+    },
+    "creator_positive_rate": {
+      "count": 0,
+      "denominator": 30,
+      "denominator_label": "all_unique_comments",
+      "ratio": 0.0,
+      "percent": 0.0,
+      "display_percent": 0.0,
+      "unit": "percent_0_100"
+    }
+  },
+  "counts": {
+    "total_comments": 30,
+    "bullish": 10,
+    "bearish": 8,
+    "neutral": 4,
+    "mixed": 4,
+    "unclear": 2,
+    "not_applicable": 2
+  },
+  "exact_calculation": {
+    "directional_score_fraction": "1/11",
+    "bfsi_fraction": "600/11",
+    "signal_coverage_fraction": "11/15",
+    "disagreement_fraction": "8/9"
+  },
+  "distributions": {
+    "relevance": {
+      "financial": 26,
+      "social": 0,
+      "other": 2,
+      "unclear": 2
+    },
+    "market_stance": {
+      "bullish": 10,
+      "bearish": 8,
+      "neutral": 4,
+      "mixed": 4,
+      "unclear": 2,
+      "not_applicable": 2
+    },
+    "emotion": {
+      "optimistic": 10,
+      "pessimistic": 0,
+      "anxious": 8,
+      "fearful": 0,
+      "excited": 0,
+      "frustrated": 0,
+      "angry": 0,
+      "confused": 0,
+      "humorous": 0,
+      "neutral": 12
+    },
+    "action_intent": {
+      "buy": 0,
+      "add": 0,
+      "hold": 5,
+      "reduce": 0,
+      "sell": 0,
+      "wait": 0,
+      "ask_advice": 2,
+      "no_action": 0,
+      "unclear": 0,
+      "not_applicable": 23
+    },
+    "creator_attitude": {
+      "positive": 0,
+      "negative": 0,
+      "neutral": 0,
+      "mixed": 0,
+      "unclear": 0,
+      "not_applicable": 30
+    },
+    "sarcasm": {
+      "yes": 0,
+      "no": 30,
+      "unclear": 0
+    },
+    "confidence": {
+      "high": 30,
+      "medium": 0,
+      "low": 0
+    }
+  },
+  "distribution_percentages": {
+    "relevance": {
+      "financial": 86.7,
+      "social": 0.0,
+      "other": 6.7,
+      "unclear": 6.7
+    },
+    "market_stance": {
+      "bullish": 33.3,
+      "bearish": 26.7,
+      "neutral": 13.3,
+      "mixed": 13.3,
+      "unclear": 6.7,
+      "not_applicable": 6.7
+    },
+    "emotion": {
+      "optimistic": 33.3,
+      "pessimistic": 0.0,
+      "anxious": 26.7,
+      "fearful": 0.0,
+      "excited": 0.0,
+      "frustrated": 0.0,
+      "angry": 0.0,
+      "confused": 0.0,
+      "humorous": 0.0,
+      "neutral": 40.0
+    },
+    "action_intent": {
+      "buy": 0.0,
+      "add": 0.0,
+      "hold": 16.7,
+      "reduce": 0.0,
+      "sell": 0.0,
+      "wait": 0.0,
+      "ask_advice": 6.7,
+      "no_action": 0.0,
+      "unclear": 0.0,
+      "not_applicable": 76.7
+    },
+    "creator_attitude": {
+      "positive": 0.0,
+      "negative": 0.0,
+      "neutral": 0.0,
+      "mixed": 0.0,
+      "unclear": 0.0,
+      "not_applicable": 100.0
+    },
+    "sarcasm": {
+      "yes": 0.0,
+      "no": 100.0,
+      "unclear": 0.0
+    },
+    "confidence": {
+      "high": 100.0,
+      "medium": 0.0,
+      "low": 0.0
+    }
+  },
+  "distribution_denominator": 30,
+  "top_targets": [
+    {
+      "target_name": "通胀",
+      "target_types": [
+        "macro"
+      ],
+      "total_mentions": 13,
+      "share_of_all_comments_percent": 43.333333333333336,
+      "share_of_all_comments_display_pct": 43.3,
+      "aliases_present": [
+        "通货膨胀"
+      ],
+      "is_asset_or_market": false
+    },
+    {
+      "target_name": "黄金",
+      "target_types": [
+        "asset"
+      ],
+      "total_mentions": 13,
+      "share_of_all_comments_percent": 43.333333333333336,
+      "share_of_all_comments_display_pct": 43.3,
+      "aliases_present": [
+        "黄金"
+      ],
+      "is_asset_or_market": true
+    }
+  ],
+  "top_financial_topics": [
+    {
+      "target_name": "通胀",
+      "target_types": [
+        "macro"
+      ],
+      "total_mentions": 13,
+      "share_of_all_comments_percent": 43.333333333333336,
+      "share_of_all_comments_display_pct": 43.3,
+      "aliases_present": [
+        "通货膨胀"
+      ],
+      "is_asset_or_market": false
+    },
+    {
+      "target_name": "黄金",
+      "target_types": [
+        "asset"
+      ],
+      "total_mentions": 13,
+      "share_of_all_comments_percent": 43.333333333333336,
+      "share_of_all_comments_display_pct": 43.3,
+      "aliases_present": [
+        "黄金"
+      ],
+      "is_asset_or_market": true
+    }
+  ],
+  "target_indices": [
+    {
+      "target_name": "通胀",
+      "target_types": [
+        "macro"
+      ],
+      "aliases_present": [
+        "通货膨胀"
+      ],
+      "is_asset_or_market": false,
+      "total_mentions": 13,
+      "bullish_comments": 5,
+      "bearish_comments": 4,
+      "neutral_comments": 2,
+      "mixed_comments": 2,
+      "unclear_comments": 0,
+      "not_applicable_comments": 0,
+      "directional_comments": 11,
+      "target_BFSI": 54.54545454545455,
+      "target_BFSI_display": 54.5,
+      "target_signal_coverage": 84.61538461538461,
+      "target_signal_coverage_ratio": 0.8461538461538461,
+      "target_signal_coverage_display_pct": 84.6,
+      "no_directional_signal": false,
+      "method": "V0.1 co-occurrence approximation",
+      "target_stance_is_directly_annotated": false
+    },
+    {
+      "target_name": "黄金",
+      "target_types": [
+        "asset"
+      ],
+      "aliases_present": [
+        "黄金"
+      ],
+      "is_asset_or_market": true,
+      "total_mentions": 13,
+      "bullish_comments": 5,
+      "bearish_comments": 4,
+      "neutral_comments": 2,
+      "mixed_comments": 2,
+      "unclear_comments": 0,
+      "not_applicable_comments": 0,
+      "directional_comments": 11,
+      "target_BFSI": 54.54545454545455,
+      "target_BFSI_display": 54.5,
+      "target_signal_coverage": 84.61538461538461,
+      "target_signal_coverage_ratio": 0.8461538461538461,
+      "target_signal_coverage_display_pct": 84.6,
+      "no_directional_signal": false,
+      "method": "V0.1 co-occurrence approximation",
+      "target_stance_is_directly_annotated": false
+    }
+  ],
+  "asset_market_target_indices": [
+    {
+      "target_name": "黄金",
+      "target_types": [
+        "asset"
+      ],
+      "aliases_present": [
+        "黄金"
+      ],
+      "is_asset_or_market": true,
+      "total_mentions": 13,
+      "bullish_comments": 5,
+      "bearish_comments": 4,
+      "neutral_comments": 2,
+      "mixed_comments": 2,
+      "unclear_comments": 0,
+      "not_applicable_comments": 0,
+      "directional_comments": 11,
+      "target_BFSI": 54.54545454545455,
+      "target_BFSI_display": 54.5,
+      "target_signal_coverage": 84.61538461538461,
+      "target_signal_coverage_ratio": 0.8461538461538461,
+      "target_signal_coverage_display_pct": 84.6,
+      "no_directional_signal": false,
+      "method": "V0.1 co-occurrence approximation",
+      "target_stance_is_directly_annotated": false
+    }
+  ],
+  "representative_comments": {
+    "bullish": [
+      {
+        "comment_id": "1001",
+        "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 1）",
+        "summary": "合成人工标签：bullish",
+        "market_stance": "bullish",
+        "targets": [
+          {
+            "raw_name": "通货膨胀",
+            "normalized_name": "通货膨胀",
+            "target_type": "macro"
+          }
+        ],
+        "action_intent": "hold",
+        "confidence": "high",
+        "emotion": [
+          "optimistic"
+        ],
+        "sarcasm": "no",
+        "depth": 0,
+        "parent_comment_id": null,
+        "root_comment_id": null,
+        "context_used": {
+          "direct_parent": null,
+          "root": null,
+          "ancestor_chain": []
+        }
+      },
+      {
+        "comment_id": "1002",
+        "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 2）",
+        "summary": "合成人工标签：bullish",
+        "market_stance": "bullish",
+        "targets": [
+          {
+            "raw_name": "黄金",
+            "normalized_name": "黄金",
+            "target_type": "asset"
+          }
+        ],
+        "action_intent": "hold",
+        "confidence": "high",
+        "emotion": [
+          "optimistic"
+        ],
+        "sarcasm": "no",
+        "depth": 0,
+        "parent_comment_id": null,
+        "root_comment_id": null,
+        "context_used": {
+          "direct_parent": null,
+          "root": null,
+          "ancestor_chain": []
+        }
+      },
+      {
+        "comment_id": "1003",
+        "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 3）",
+        "summary": "合成人工标签：bullish",
+        "market_stance": "bullish",
+        "targets": [
+          {
+            "raw_name": "通货膨胀",
+            "normalized_name": "通货膨胀",
+            "target_type": "macro"
+          }
+        ],
+        "action_intent": "hold",
+        "confidence": "high",
+        "emotion": [
+          "optimistic"
+        ],
+        "sarcasm": "no",
+        "depth": 0,
+        "parent_comment_id": null,
+        "root_comment_id": null,
+        "context_used": {
+          "direct_parent": null,
+          "root": null,
+          "ancestor_chain": []
+        }
+      }
+    ],
+    "bearish": [
+      {
+        "comment_id": "1011",
+        "raw_text": "【合成评论】我担心短期市场回调，准备谨慎观察。（演示编号 11）",
+        "summary": "合成人工标签：bearish",
+        "market_stance": "bearish",
+        "targets": [
+          {
+            "raw_name": "通货膨胀",
+            "normalized_name": "通货膨胀",
+            "target_type": "macro"
+          }
+        ],
+        "action_intent": "not_applicable",
+        "confidence": "high",
+        "emotion": [
+          "anxious"
+        ],
+        "sarcasm": "no",
+        "depth": 0,
+        "parent_comment_id": null,
+        "root_comment_id": null,
+        "context_used": {
+          "direct_parent": null,
+          "root": null,
+          "ancestor_chain": []
+        }
+      },
+      {
+        "comment_id": "1012",
+        "raw_text": "【合成评论】我担心短期市场回调，准备谨慎观察。（演示编号 12）",
+        "summary": "合成人工标签：bearish",
+        "market_stance": "bearish",
+        "targets": [
+          {
+            "raw_name": "黄金",
+            "normalized_name": "黄金",
+            "target_type": "asset"
+          }
+        ],
+        "action_intent": "not_applicable",
+        "confidence": "high",
+        "emotion": [
+          "anxious"
+        ],
+        "sarcasm": "no",
+        "depth": 0,
+        "parent_comment_id": null,
+        "root_comment_id": null,
+        "context_used": {
+          "direct_parent": null,
+          "root": null,
+          "ancestor_chain": []
+        }
+      },
+      {
+        "comment_id": "1013",
+        "raw_text": "【合成评论】我担心短期市场回调，准备谨慎观察。（演示编号 13）",
+        "summary": "合成人工标签：bearish",
+        "market_stance": "bearish",
+        "targets": [
+          {
+            "raw_name": "通货膨胀",
+            "normalized_name": "通货膨胀",
+            "target_type": "macro"
+          }
+        ],
+        "action_intent": "not_applicable",
+        "confidence": "high",
+        "emotion": [
+          "anxious"
+        ],
+        "sarcasm": "no",
+        "depth": 0,
+        "parent_comment_id": null,
+        "root_comment_id": null,
+        "context_used": {
+          "direct_parent": null,
+          "root": null,
+          "ancestor_chain": []
+        }
+      }
+    ],
+    "mixed": [
+      {
+        "comment_id": "1019",
+        "raw_text": "【合成评论】长期有机会，但短期走势仍不确定。（演示编号 19）",
+        "summary": "合成人工标签：mixed",
+        "market_stance": "mixed",
+        "targets": [
+          {
+            "raw_name": "通货膨胀",
+            "normalized_name": "通货膨胀",
+            "target_type": "macro"
+          }
+        ],
+        "action_intent": "not_applicable",
+        "confidence": "high",
+        "emotion": [
+          "neutral"
+        ],
+        "sarcasm": "no",
+        "depth": 0,
+        "parent_comment_id": null,
+        "root_comment_id": null,
+        "context_used": {
+          "direct_parent": null,
+          "root": null,
+          "ancestor_chain": []
+        }
+      },
+      {
+        "comment_id": "1020",
+        "raw_text": "【合成评论】长期有机会，但短期走势仍不确定。（演示编号 20）",
+        "summary": "合成人工标签：mixed",
+        "market_stance": "mixed",
+        "targets": [
+          {
+            "raw_name": "黄金",
+            "normalized_name": "黄金",
+            "target_type": "asset"
+          }
+        ],
+        "action_intent": "not_applicable",
+        "confidence": "high",
+        "emotion": [
+          "neutral"
+        ],
+        "sarcasm": "no",
+        "depth": 0,
+        "parent_comment_id": null,
+        "root_comment_id": null,
+        "context_used": {
+          "direct_parent": null,
+          "root": null,
+          "ancestor_chain": []
+        }
+      }
+    ],
+    "ask_advice": [
+      {
+        "comment_id": "1024",
+        "raw_text": "【合成评论】这里讨论了通胀和黄金，并未表达价格方向。（演示编号 24）",
+        "summary": "合成人工标签：neutral",
+        "market_stance": "neutral",
+        "targets": [
+          {
+            "raw_name": "黄金",
+            "normalized_name": "黄金",
+            "target_type": "asset"
+          }
+        ],
+        "action_intent": "ask_advice",
+        "confidence": "high",
+        "emotion": [
+          "neutral"
+        ],
+        "sarcasm": "no",
+        "depth": 0,
+        "parent_comment_id": null,
+        "root_comment_id": null,
+        "context_used": {
+          "direct_parent": null,
+          "root": null,
+          "ancestor_chain": []
+        }
+      },
+      {
+        "comment_id": "1025",
+        "raw_text": "【合成评论】这里讨论了通胀和黄金，并未表达价格方向。（演示编号 25）",
+        "summary": "合成人工标签：neutral",
+        "market_stance": "neutral",
+        "targets": [
+          {
+            "raw_name": "通货膨胀",
+            "normalized_name": "通货膨胀",
+            "target_type": "macro"
+          }
+        ],
+        "action_intent": "ask_advice",
+        "confidence": "high",
+        "emotion": [
+          "neutral"
+        ],
+        "sarcasm": "no",
+        "depth": 0,
+        "parent_comment_id": null,
+        "root_comment_id": null,
+        "context_used": {
+          "direct_parent": null,
+          "root": null,
+          "ancestor_chain": []
+        }
+      }
+    ],
+    "humorous": []
+  },
+  "commentary": "本视频评论区 BFSI 为 54.5/100，方向接近中性并略偏多。22/30 条评论（73.3%）表达了明确市场方向，解读方向分数时需同时参考覆盖率。在 bullish/bearish 的 18 条评论中，看多 10 条、看空 8 条，Disagreement 为 89/100，多空数量接近，分歧较高；mixed 4 条参与 BFSI 分母，不参与分歧计算。财经对象提及主要集中在通胀、黄金等主题。",
+  "methodology": {
+    "index_name": "BFSI Market Direction Index",
+    "version": "v0.1",
+    "unit_of_analysis": "unique Comment ID",
+    "unweighted": true,
+    "relevance_filter_for_main_index": false,
+    "directional_score": "(bullish - bearish) / (bullish + bearish + mixed)",
+    "bfsi": "50 + 50 * directional_score; denominator 0 => 50 and no_directional_signal=true",
+    "signal_coverage": "(bullish + bearish + mixed) / all_unique_comments; displayed as percent",
+    "disagreement": "1 - abs(bullish - bearish) / (bullish + bearish); denominator 0 => 0; displayed × 100",
+    "excluded_stances": [
+      "neutral",
+      "unclear",
+      "not_applicable"
+    ],
+    "mixed_contribution": "0 in numerator, 1 in BFSI denominator",
+    "active_trading_intent_labels": [
+      "buy",
+      "add",
+      "reduce",
+      "sell",
+      "hold"
+    ],
+    "display_rounding": {
+      "bfsi_decimals": 1,
+      "percent_decimals": 1,
+      "disagreement_decimals": 0,
+      "mode": "ROUND_HALF_UP"
+    },
+    "commentary_only_bands": {
+      "near_neutral_bfsi_inclusive": [
+        45,
+        55
+      ],
+      "low_coverage_below_percent": 10,
+      "high_disagreement_at_least": 80
+    },
+    "commentary_bands_note": "Fixed display wording only; never affect counts, index values or weighting; no parameter optimization.",
+    "target_method": "V0.1 co-occurrence approximation",
+    "target_threshold_unique_comments": 5,
+    "target_units": {
+      "total_mentions": "unique comments mentioning canonical target",
+      "target_BFSI": "index_0_100",
+      "target_signal_coverage": "percent_0_100"
+    },
+    "target_grouping": "canonical_name only; source target_types retained; per-comment deduplication after alias merge",
+    "emotion_distribution": "multi-label; each label counted once per comment; category counts need not sum to total",
+    "auxiliary_rate_denominator": "all_unique_comments for every auxiliary rate"
+  },
+  "source": {
+    "run_id": "20261025T000000Z_00000001",
+    "semantic_version": "synthetic_demo_v1",
+    "sha256": "eb6c425cb1683d26bb50eb7ca7b56d0dc862a4b94b42399fa3254d69b275afbc",
+    "hash_basis": "canonical UTF-8 JSON; sorted keys; compact separators",
+    "upstream_source": {},
+    "formula_path": "bfsi/index/math.py",
+    "formula_sha256": "b8477441c423eb371f96acb05aa2f80492c1053ce3ba320a13a387438affc2ee",
+    "semantic_schema_path": "bfsi/resources/simplified_semantic_schema_v0.1.json",
+    "semantic_schema_sha256": "1604472cdd7cad69ba28bad39adc3186722146321f2d37d1920eb9b27bde8ea4",
+    "alias_path": "bfsi/resources/target_aliases_v0.1.json",
+    "alias_sha256": "1db161f5655273b644dfc50e873cb4feea1d9ea770d44246454a274291005c95"
+  },
+  "analysis": {
+    "run_id": "20261025T000000Z_00000001",
+    "model": "synthetic-human-labels-no-model",
+    "scope": "synthetic",
+    "collection": {
+      "mode": "quick",
+      "scope": "synthetic",
+      "complete": false,
+      "partial": true,
+      "selected_comments": 30,
+      "raw_unique_comments": 30,
+      "raw_response_pages": 0,
+      "warnings": [
+        "全部数据为人工构造，未采集任何真实视频或用户评论。"
+      ]
+    },
+    "unique_comments": 30,
+    "observations": 35,
+    "input_records": 30,
+    "duplicate_records_ignored": 0,
+    "representative_selection": "deterministic label selection; category limits 3/3/2/2/2; missing groups empty",
+    "synthetic": true,
+    "mode": "quick",
+    "requested_limit": 30,
+    "analyzed_comments": 30,
+    "semantic_complete": true,
+    "created_at": "2026-10-25T00:00:00Z",
+    "completed_at": "2026-10-25T00:00:00Z",
+    "warnings": [
+      "全部数据为人工构造，未采集任何真实视频或用户评论。"
+    ]
+  },
+  "limitations": [
+    "V0.1 exploratory index for the collected video sample, not market prediction.",
+    "Interpret BFSI jointly with coverage; no_directional_signal must be displayed when true.",
+    "Targets use comment-level stance co-occurrence, not target-level stance.",
+    "Action labels can include past trades, conditional plans and attribution ambiguity.",
+    "Representative comments are model outputs, not human-approved facts or investment advice."
+  ],
+  "metadata": {
+    "run_id": "20261025T000000Z_00000001",
+    "generated_at": "2026-10-25T00:00:00Z",
+    "synthetic": true
+  }
+}

@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bfsi"
+version = "0.2.0"
+description = "B站财经评论区情绪观察器 / Bilibili Financial Sentiment Observer"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["jsonschema==4.26.0", "Pillow==12.3.0"]
+
+[project.scripts]
+bfsi = "bfsi.server.http:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+bfsi = ["resources/*.json", "resources/*.md"]

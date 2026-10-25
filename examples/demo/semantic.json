@@ -1,0 +1,943 @@
+{
+  "dataset_version": "synthetic_demo_v1",
+  "model_requested": "synthetic-human-labels-no-model",
+  "records": [
+    {
+      "comment_id": "1001",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 1）",
+      "summary": "合成人工标签：bullish",
+      "relevance": "financial",
+      "market_stance": "bullish",
+      "emotion": [
+        "optimistic"
+      ],
+      "action_intent": "hold",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 2,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1002",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 2）",
+      "summary": "合成人工标签：bullish",
+      "relevance": "financial",
+      "market_stance": "bullish",
+      "emotion": [
+        "optimistic"
+      ],
+      "action_intent": "hold",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 2,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1003",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 3）",
+      "summary": "合成人工标签：bullish",
+      "relevance": "financial",
+      "market_stance": "bullish",
+      "emotion": [
+        "optimistic"
+      ],
+      "action_intent": "hold",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 2,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1004",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 4）",
+      "summary": "合成人工标签：bullish",
+      "relevance": "financial",
+      "market_stance": "bullish",
+      "emotion": [
+        "optimistic"
+      ],
+      "action_intent": "hold",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 2,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1005",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 5）",
+      "summary": "合成人工标签：bullish",
+      "relevance": "financial",
+      "market_stance": "bullish",
+      "emotion": [
+        "optimistic"
+      ],
+      "action_intent": "hold",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 2,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1006",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 6）",
+      "summary": "合成人工标签：bullish",
+      "relevance": "financial",
+      "market_stance": "bullish",
+      "emotion": [
+        "optimistic"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1007",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 7）",
+      "summary": "合成人工标签：bullish",
+      "relevance": "financial",
+      "market_stance": "bullish",
+      "emotion": [
+        "optimistic"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1008",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 8）",
+      "summary": "合成人工标签：bullish",
+      "relevance": "financial",
+      "market_stance": "bullish",
+      "emotion": [
+        "optimistic"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1009",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 9）",
+      "summary": "合成人工标签：bullish",
+      "relevance": "financial",
+      "market_stance": "bullish",
+      "emotion": [
+        "optimistic"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1010",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我对后续市场持乐观态度，仍需观察风险。（演示编号 10）",
+      "summary": "合成人工标签：bullish",
+      "relevance": "financial",
+      "market_stance": "bullish",
+      "emotion": [
+        "optimistic"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1011",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我担心短期市场回调，准备谨慎观察。（演示编号 11）",
+      "summary": "合成人工标签：bearish",
+      "relevance": "financial",
+      "market_stance": "bearish",
+      "emotion": [
+        "anxious"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1012",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我担心短期市场回调，准备谨慎观察。（演示编号 12）",
+      "summary": "合成人工标签：bearish",
+      "relevance": "financial",
+      "market_stance": "bearish",
+      "emotion": [
+        "anxious"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1013",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我担心短期市场回调，准备谨慎观察。（演示编号 13）",
+      "summary": "合成人工标签：bearish",
+      "relevance": "financial",
+      "market_stance": "bearish",
+      "emotion": [
+        "anxious"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1014",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我担心短期市场回调，准备谨慎观察。（演示编号 14）",
+      "summary": "合成人工标签：bearish",
+      "relevance": "financial",
+      "market_stance": "bearish",
+      "emotion": [
+        "anxious"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1015",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我担心短期市场回调，准备谨慎观察。（演示编号 15）",
+      "summary": "合成人工标签：bearish",
+      "relevance": "financial",
+      "market_stance": "bearish",
+      "emotion": [
+        "anxious"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1016",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我担心短期市场回调，准备谨慎观察。（演示编号 16）",
+      "summary": "合成人工标签：bearish",
+      "relevance": "financial",
+      "market_stance": "bearish",
+      "emotion": [
+        "anxious"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1017",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我担心短期市场回调，准备谨慎观察。（演示编号 17）",
+      "summary": "合成人工标签：bearish",
+      "relevance": "financial",
+      "market_stance": "bearish",
+      "emotion": [
+        "anxious"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1018",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】我担心短期市场回调，准备谨慎观察。（演示编号 18）",
+      "summary": "合成人工标签：bearish",
+      "relevance": "financial",
+      "market_stance": "bearish",
+      "emotion": [
+        "anxious"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1019",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】长期有机会，但短期走势仍不确定。（演示编号 19）",
+      "summary": "合成人工标签：mixed",
+      "relevance": "financial",
+      "market_stance": "mixed",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1020",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】长期有机会，但短期走势仍不确定。（演示编号 20）",
+      "summary": "合成人工标签：mixed",
+      "relevance": "financial",
+      "market_stance": "mixed",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1021",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】长期有机会，但短期走势仍不确定。（演示编号 21）",
+      "summary": "合成人工标签：mixed",
+      "relevance": "financial",
+      "market_stance": "mixed",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1022",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】长期有机会，但短期走势仍不确定。（演示编号 22）",
+      "summary": "合成人工标签：mixed",
+      "relevance": "financial",
+      "market_stance": "mixed",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1023",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】这里讨论了通胀和黄金，并未表达价格方向。（演示编号 23）",
+      "summary": "合成人工标签：neutral",
+      "relevance": "financial",
+      "market_stance": "neutral",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1024",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】这里讨论了通胀和黄金，并未表达价格方向。（演示编号 24）",
+      "summary": "合成人工标签：neutral",
+      "relevance": "financial",
+      "market_stance": "neutral",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "ask_advice",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1025",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】这里讨论了通胀和黄金，并未表达价格方向。（演示编号 25）",
+      "summary": "合成人工标签：neutral",
+      "relevance": "financial",
+      "market_stance": "neutral",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "ask_advice",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "通货膨胀",
+          "normalized_name": "通货膨胀",
+          "target_type": "macro"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1026",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】这里讨论了通胀和黄金，并未表达价格方向。（演示编号 26）",
+      "summary": "合成人工标签：neutral",
+      "relevance": "financial",
+      "market_stance": "neutral",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [
+        {
+          "raw_name": "黄金",
+          "normalized_name": "黄金",
+          "target_type": "asset"
+        }
+      ],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1027",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】还需要更多信息才能判断。（演示编号 27）",
+      "summary": "合成人工标签：unclear",
+      "relevance": "unclear",
+      "market_stance": "unclear",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1028",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】还需要更多信息才能判断。（演示编号 28）",
+      "summary": "合成人工标签：unclear",
+      "relevance": "unclear",
+      "market_stance": "unclear",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1029",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】这个图表的颜色挺清楚。（演示编号 29）",
+      "summary": "合成人工标签：not_applicable",
+      "relevance": "other",
+      "market_stance": "not_applicable",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    },
+    {
+      "comment_id": "1030",
+      "video_oid": "900001",
+      "video_bvid": "BV0000000000",
+      "raw_text": "【合成评论】这个图表的颜色挺清楚。（演示编号 30）",
+      "summary": "合成人工标签：not_applicable",
+      "relevance": "other",
+      "market_stance": "not_applicable",
+      "emotion": [
+        "neutral"
+      ],
+      "action_intent": "not_applicable",
+      "creator_attitude": "not_applicable",
+      "sarcasm": "no",
+      "confidence": "high",
+      "targets": [],
+      "depth": 0,
+      "parent_comment_id": null,
+      "root_comment_id": null,
+      "observation_count": 1,
+      "context_used": {
+        "direct_parent": null,
+        "root": null,
+        "ancestor_chain": []
+      }
+    }
+  ],
+  "synthetic": true
+}

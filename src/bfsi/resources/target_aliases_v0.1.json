@@ -1,0 +1,33 @@
+{
+  "version": "v0.1",
+  "match_field": "normalized_name when non-null/non-empty; otherwise raw_name",
+  "match_mode": "exact string equality; no fuzzy matching, embeddings or context inference",
+  "scope": "index aggregation",
+  "aliases": [
+    {
+      "from": "美国加息",
+      "to": "美联储加息",
+      "reason": "用户明确允许的对应关系；仅匹配这个完整名称。"
+    },
+    {
+      "from": "通货膨胀",
+      "to": "通胀",
+      "reason": "完整名称与明确的常用简称。"
+    }
+  ],
+  "deliberately_unmerged": [
+    {
+      "name": "加息",
+      "reason": "未明确国家或机构，不根据视频主题或其他评论补成美联储加息。"
+    },
+    {
+      "name": "房价 / 房地产 / 房地产市场 / 房产",
+      "reason": "价格、市场与具体资产口径不完全相同，本轮不扩展合并。"
+    },
+    {
+      "name": "点阵图 / 利率点阵图 / 美联储点阵图",
+      "reason": "保留已有明确程度，不补全泛称的机构范围。"
+    }
+  ],
+  "counting": "Group by canonical target name; retain all observed target_types. Within each comment, count a canonical target at most once."
+}

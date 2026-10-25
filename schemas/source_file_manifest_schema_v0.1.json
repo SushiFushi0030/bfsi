@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:bfsi:source-file-manifest:0.1",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "raw_file": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$))[^\\\\]+\\.json$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "source_endpoint": {
+            "enum": [
+              "/x/v2/reply/wbi/main",
+              "/x/v2/reply/reply"
+            ]
+          },
+          "source_run": {
+            "type": "string",
+            "minLength": 1
+          },
+          "run_time": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,6})?Z$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "run_time_basis": {
+            "enum": [
+              "run_directory",
+              "collector",
+              "synthetic",
+              "unknown"
+            ]
+          },
+          "received_at": {
+            "anyOf": [
+              {
+                "type": "string",
+                "format": "date-time",
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,6})?Z$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "raw_file",
+          "sha256",
+          "source_endpoint",
+          "source_run",
+          "run_time",
+          "run_time_basis",
+          "received_at"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "files"
+  ],
+  "additionalProperties": false
+}
